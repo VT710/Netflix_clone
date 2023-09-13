@@ -55,7 +55,7 @@ ul li{
     width: 15%;
 }
 .menu{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -226,7 +226,69 @@ ul li{
 }
 
 .togglebtn{
-    display: ;
+    display: inline;
     font-size: 30px;
     background-color: transparent;
+    border: none;
+    color: #0094da;
+
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:1150px){
+    .banner h1{
+        font-size: 3.8rem;
+    }
+
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .left-nav, right-nav{
+        width: 100%;
+        justify-content: flex-start;
+        margin: 20px 0;
+
+    }
+
+    ul li{
+        margin-right: 30px;
+    }
+
+    .togglebtn{
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        margin-top: 18px;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .banner h1{
+        font-size: 3rem;
+    }
+    .banner{
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .banner h1{
+        font-size: 3rem;
+    }
+    .banner{
+        padding: 50px;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    ul li{
+        margin-bottom: 10px;
+    }
 }
